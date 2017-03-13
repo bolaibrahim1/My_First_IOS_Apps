@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Simple_Cal" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter first number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pbM-Nm-zsI">
+                                <rect key="frame" x="31" y="47" width="313" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter second number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hST-ny-Lcg">
+                                <rect key="frame" x="31" y="120" width="313" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="rX7-a9-J8O">
+                                <rect key="frame" x="79" y="253" width="160" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6g-oV-MZ7">
+                                        <rect key="frame" x="0.0" y="0.0" width="31" height="30"/>
+                                        <state key="normal" title="Sum"/>
+                                        <connections>
+                                            <action selector="sum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tgz-0k-TgR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZd-0C-VMc">
+                                        <rect key="frame" x="101" y="0.0" width="59" height="30"/>
+                                        <state key="normal" title="Substrct"/>
+                                        <connections>
+                                            <action selector="sub:" destination="BYZ-38-t0r" eventType="touchUpInside" id="48b-Lh-1pC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESULT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0my-l8-uNH">
+                                <rect key="frame" x="110" y="179" width="154" height="20.5"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hST-ny-Lcg" firstAttribute="trailing" secondItem="pbM-Nm-zsI" secondAttribute="trailing" id="3N8-ZO-BDv"/>
+                            <constraint firstItem="hST-ny-Lcg" firstAttribute="top" secondItem="pbM-Nm-zsI" secondAttribute="bottom" constant="43" id="978-Ic-asK"/>
+                            <constraint firstItem="pbM-Nm-zsI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BEZ-2s-7JC"/>
+                            <constraint firstItem="0my-l8-uNH" firstAttribute="centerX" secondItem="hST-ny-Lcg" secondAttribute="centerX" id="DtU-5p-lc0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pbM-Nm-zsI" secondAttribute="trailing" constant="15" id="HDK-bB-ZhR"/>
+                            <constraint firstItem="rX7-a9-J8O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="63" id="N6H-9l-2RH"/>
+                            <constraint firstItem="rX7-a9-J8O" firstAttribute="top" secondItem="0my-l8-uNH" secondAttribute="bottom" constant="53" id="W8O-vW-ZGK"/>
+                            <constraint firstItem="hST-ny-Lcg" firstAttribute="leading" secondItem="pbM-Nm-zsI" secondAttribute="leading" id="e4O-68-UG6"/>
+                            <constraint firstItem="pbM-Nm-zsI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="ihT-Nz-3z2"/>
+                            <constraint firstItem="pbM-Nm-zsI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="uID-id-Ll9"/>
+                            <constraint firstItem="0my-l8-uNH" firstAttribute="top" secondItem="hST-ny-Lcg" secondAttribute="bottom" constant="29" id="vsO-jN-D4e"/>
+                            <constraint firstItem="0my-l8-uNH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="94" id="x8I-Cj-eU4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="no1" destination="pbM-Nm-zsI" id="8WY-jR-cN3"/>
+                        <outlet property="no2" destination="hST-ny-Lcg" id="DuJ-I1-yO8"/>
+                        <outlet property="result" destination="0my-l8-uNH" id="Fij-0U-npF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
