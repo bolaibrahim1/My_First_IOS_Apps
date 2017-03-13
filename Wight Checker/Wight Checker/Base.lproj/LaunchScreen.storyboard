@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="131983281_XS" translatesAutoresizingMaskIntoConstraints="NO" id="ubg-6Q-hAi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Yoe-Ah-2eS">
+                                <rect key="frame" x="9" y="237" width="356" height="192"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9H-GC-MqA">
+                                        <rect key="frame" x="74.5" y="0.0" width="207.5" height="64"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="49"/>
+                                        <color key="textColor" red="0.43109984634898335" green="0.28957330751666877" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uT-8S-oSG">
+                                        <rect key="frame" x="152.5" y="64" width="51" height="64"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="49"/>
+                                        <color key="textColor" red="0.43109984629999998" green="0.28957330749999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight Checker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3i-gM-X7N">
+                                        <rect key="frame" x="0.5" y="128" width="355.5" height="64"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="49"/>
+                                        <color key="textColor" red="0.43109984629999998" green="0.28957330749999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Yoe-Ah-2eS" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="262-y7-qOo"/>
+                            <constraint firstItem="Yoe-Ah-2eS" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="9" id="2cx-Rp-xTH"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="ubg-6Q-hAi" secondAttribute="bottom" id="843-GM-PnM"/>
+                            <constraint firstItem="ubg-6Q-hAi" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="DvO-66-cc4"/>
+                            <constraint firstItem="Yoe-Ah-2eS" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="JPI-jy-WIg"/>
+                            <constraint firstAttribute="trailing" secondItem="Yoe-Ah-2eS" secondAttribute="trailing" constant="10" id="RbU-Ue-Zfi"/>
+                            <constraint firstItem="ubg-6Q-hAi" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="UXG-fE-GHt"/>
+                            <constraint firstItem="Yoe-Ah-2eS" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="217" id="bqk-at-rdd"/>
+                            <constraint firstAttribute="trailing" secondItem="ubg-6Q-hAi" secondAttribute="trailing" id="suP-0j-k67"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="131983281_XS" width="673" height="449"/>
+    </resources>
+</document>
