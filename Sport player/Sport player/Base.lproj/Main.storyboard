@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sport_player" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rzd-yS-EH8">
+                                <rect key="frame" x="16" y="107" width="343" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="Xt9-xS-33C"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="RaT-jf-Rey"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ijn-6E-g9H"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Your Favourite Team " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Xb-Ww-9cd">
+                                <rect key="frame" x="28" y="298" width="319" height="45"/>
+                                <color key="backgroundColor" red="0.49295400719999999" green="1" blue="0.39789153040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.92752398430000005" green="0.56632644909999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="t4b-J7-1Pg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Favourite Player is  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztr-9O-4ul">
+                                <rect key="frame" x="16" y="234" width="343" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4M8-89-GfR">
+                                <rect key="frame" x="46" y="376" width="283" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="r86-IU-b2v"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="oNO-dV-FVw"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="KNm-ym-5tL"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Favourite Team is        " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FwR-5i-bSw">
+                                <rect key="frame" x="36" y="496" width="196" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Your favourite player and his Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FO-ZF-4z8">
+                                <rect key="frame" x="16" y="36" width="343" height="51"/>
+                                <color key="backgroundColor" red="0.49295400719999999" green="1" blue="0.39789153040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.92752398426569194" green="0.56632644914806751" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="gNO-xG-Fh4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Favourite Player Number is  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQZ-8K-tnw">
+                                <rect key="frame" x="16" y="266" width="343" height="17"/>
+                                <color key="backgroundColor" red="0.95679656496769228" green="1" blue="0.99937827747179264" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HQZ-8K-tnw" firstAttribute="trailing" secondItem="ztr-9O-4ul" secondAttribute="trailing" id="0kY-uj-SOR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Xb-Ww-9cd" secondAttribute="trailing" constant="12" id="2sG-Bb-Uu2"/>
+                            <constraint firstItem="ztr-9O-4ul" firstAttribute="top" secondItem="Rzd-yS-EH8" secondAttribute="bottom" constant="40" id="B5L-5o-LsQ"/>
+                            <constraint firstItem="Rzd-yS-EH8" firstAttribute="leading" secondItem="3FO-ZF-4z8" secondAttribute="leading" id="DDh-Z3-2Q2"/>
+                            <constraint firstItem="ztr-9O-4ul" firstAttribute="leading" secondItem="Rzd-yS-EH8" secondAttribute="leading" id="EZT-E8-H0B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4M8-89-GfR" secondAttribute="trailing" constant="30" id="JYr-VR-M3d"/>
+                            <constraint firstItem="3FO-ZF-4z8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="K1j-4c-ZUE"/>
+                            <constraint firstItem="4M8-89-GfR" firstAttribute="top" secondItem="3Xb-Ww-9cd" secondAttribute="bottom" constant="33" id="MCD-MU-mdc"/>
+                            <constraint firstItem="3Xb-Ww-9cd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="Q0L-aX-UTm"/>
+                            <constraint firstItem="HQZ-8K-tnw" firstAttribute="top" secondItem="ztr-9O-4ul" secondAttribute="bottom" constant="15" id="QdE-Md-ojK"/>
+                            <constraint firstItem="Rzd-yS-EH8" firstAttribute="trailing" secondItem="3FO-ZF-4z8" secondAttribute="trailing" id="Wsv-2I-cQ3"/>
+                            <constraint firstItem="FwR-5i-bSw" firstAttribute="top" secondItem="4M8-89-GfR" secondAttribute="bottom" constant="53" id="YEM-h5-jUx"/>
+                            <constraint firstItem="3Xb-Ww-9cd" firstAttribute="top" secondItem="ztr-9O-4ul" secondAttribute="bottom" constant="46.5" id="ZCO-3k-Vve"/>
+                            <constraint firstItem="ztr-9O-4ul" firstAttribute="centerX" secondItem="3Xb-Ww-9cd" secondAttribute="centerX" id="fhR-6u-TAi"/>
+                            <constraint firstItem="ztr-9O-4ul" firstAttribute="trailing" secondItem="Rzd-yS-EH8" secondAttribute="trailing" id="ioX-H5-BIz"/>
+                            <constraint firstItem="FwR-5i-bSw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="kRV-BO-D4Y"/>
+                            <constraint firstItem="HQZ-8K-tnw" firstAttribute="leading" secondItem="ztr-9O-4ul" secondAttribute="leading" id="srh-dB-ez1"/>
+                            <constraint firstItem="3FO-ZF-4z8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uJt-zM-msT"/>
+                            <constraint firstItem="4M8-89-GfR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="xlI-nB-Ndx"/>
+                            <constraint firstItem="Rzd-yS-EH8" firstAttribute="top" secondItem="3FO-ZF-4z8" secondAttribute="bottom" constant="20" id="yhv-VO-0Xm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="numberResult" destination="HQZ-8K-tnw" id="QHZ-9E-tTK"/>
+                        <outlet property="playerandNumberPicker" destination="Rzd-yS-EH8" id="72g-AG-hCb"/>
+                        <outlet property="playerandnumberResult" destination="ztr-9O-4ul" id="FKk-5k-FM6"/>
+                        <outlet property="teamResult" destination="FwR-5i-bSw" id="oNc-75-5ZW"/>
+                        <outlet property="teampickerview" destination="4M8-89-GfR" id="qys-Bn-hu6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
