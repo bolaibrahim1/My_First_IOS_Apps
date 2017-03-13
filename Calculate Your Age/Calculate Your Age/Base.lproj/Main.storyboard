@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculate_Your_Age" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your Birthday to Get Your Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gr3-81-AqS">
+                                <rect key="frame" x="16" y="45" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.24937130923987416" green="1" blue="0.2583050010007093" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EpE-QY-ZIm"/>
+                                    <constraint firstAttribute="width" constant="343" id="YrA-ui-SJR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Age is :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHb-nX-3nU">
+                                <rect key="frame" x="26" y="467" width="323" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="nEF-ub-P6T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gmb-e5-OE5">
+                                <rect key="frame" x="16" y="126" width="343" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="511099723.90108901">
+                                    <!--2017-03-13 12:08:43 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofw-vj-bz4">
+                                <rect key="frame" x="122" y="362" width="131" height="65"/>
+                                <color key="backgroundColor" red="0.45213579827900063" green="0.54667200880307187" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="du2-gV-Aar"/>
+                                    <constraint firstAttribute="height" constant="65" id="oT9-pM-co0"/>
+                                </constraints>
+                                <state key="normal" title="Get ">
+                                    <color key="titleColor" red="0.95885286205737186" green="1" blue="0.92766152241308242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EWH-P9-Rhy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gr3-81-AqS" secondAttribute="trailing" constant="16" id="0ME-a1-kbp"/>
+                            <constraint firstItem="ofw-vj-bz4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="106" id="KUr-SR-lRz"/>
+                            <constraint firstItem="gr3-81-AqS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="OaL-le-MEV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RHb-nX-3nU" secondAttribute="trailing" constant="10" id="ZnK-k2-jU4"/>
+                            <constraint firstItem="RHb-nX-3nU" firstAttribute="top" secondItem="ofw-vj-bz4" secondAttribute="bottom" constant="40" id="bXu-ID-gTM"/>
+                            <constraint firstItem="RHb-nX-3nU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="biE-WA-c0x"/>
+                            <constraint firstItem="gr3-81-AqS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="c5l-wr-XQj"/>
+                            <constraint firstItem="gr3-81-AqS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dBd-k7-HYy"/>
+                            <constraint firstItem="Gmb-e5-OE5" firstAttribute="top" secondItem="gr3-81-AqS" secondAttribute="bottom" constant="31" id="ibt-Xp-ovS"/>
+                            <constraint firstItem="Gmb-e5-OE5" firstAttribute="trailing" secondItem="gr3-81-AqS" secondAttribute="trailing" id="q3S-BS-VJf"/>
+                            <constraint firstItem="ofw-vj-bz4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rIf-nv-VuT"/>
+                            <constraint firstItem="gr3-81-AqS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rlo-ey-wav"/>
+                            <constraint firstItem="ofw-vj-bz4" firstAttribute="top" secondItem="Gmb-e5-OE5" secondAttribute="bottom" constant="20" id="uMg-Z2-gpD"/>
+                            <constraint firstItem="Gmb-e5-OE5" firstAttribute="leading" secondItem="gr3-81-AqS" secondAttribute="leading" id="ugJ-HC-d6K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="birthdayPicker" destination="Gmb-e5-OE5" id="fEY-os-lTx"/>
+                        <outlet property="result" destination="RHb-nX-3nU" id="K4e-yb-xEP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.5" y="138.5"/>
+        </scene>
+    </scenes>
+</document>
