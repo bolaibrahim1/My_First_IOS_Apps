@@ -33,7 +33,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    //first
+    //first-> method for picker view that make number of component for each picker also works as tag like id for each one
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         if pickerView.tag == 0{
             return 2
@@ -41,7 +41,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
             return 1
         }
     }
-    //second
+    
+    //second set the data count for each picker and specify as component number
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
             if pickerView.tag == 0 {
                 if component == 0 {
@@ -56,7 +57,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     var select = 0
-    //third
+    //third-> give us the data that second method selected
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         select = row
         if pickerView.tag == 0 {
@@ -69,7 +70,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
             return team[row]
         }
     }
-    //forth
+    //forth -> final method and that display on the screen
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerView.tag == 0 {
         if component == 0 {

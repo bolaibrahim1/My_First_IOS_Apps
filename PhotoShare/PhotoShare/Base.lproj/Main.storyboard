@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhotoShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwF-3p-lia">
+                                <rect key="frame" x="28" y="526" width="143" height="48"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="143" id="ddn-re-DfM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Select">
+                                    <color key="titleColor" red="0.96917395029999998" green="1" blue="0.97377157420000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rIo-wZ-7Xk"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rzv-Vm-Csf">
+                                <rect key="frame" x="28" y="166" width="318" height="300"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share Photo Via Facebook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqf-I4-ZxL">
+                                <rect key="frame" x="28" y="77" width="320" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="Y7K-lc-Rcy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="34"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kc-xD-5EE">
+                                <rect key="frame" x="203" y="526" width="143" height="48"/>
+                                <color key="backgroundColor" red="0.069408455123779467" green="0.31281677778412081" blue="0.78067780901370565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" red="0.96917395029999998" green="1" blue="0.97377157420000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="faceShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O9c-TH-Odf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46154499049999997" green="0.84053152799999997" blue="0.99509030580000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rzv-Vm-Csf" firstAttribute="trailing" secondItem="9kc-xD-5EE" secondAttribute="trailing" id="0ha-Uo-rPK"/>
+                            <constraint firstItem="Rzv-Vm-Csf" firstAttribute="top" secondItem="Kqf-I4-ZxL" secondAttribute="bottom" constant="20" id="G7G-OR-cKg"/>
+                            <constraint firstItem="Rzv-Vm-Csf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GCM-KS-Ift"/>
+                            <constraint firstItem="Kqf-I4-ZxL" firstAttribute="leading" secondItem="Rzv-Vm-Csf" secondAttribute="leading" id="LFu-Gc-cBI"/>
+                            <constraint firstItem="Kqf-I4-ZxL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="Oma-7u-Ntv"/>
+                            <constraint firstItem="9kc-xD-5EE" firstAttribute="leading" secondItem="cwF-3p-lia" secondAttribute="trailing" constant="32" id="bzh-Lw-FRI"/>
+                            <constraint firstItem="Kqf-I4-ZxL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="egV-lS-xUB"/>
+                            <constraint firstItem="cwF-3p-lia" firstAttribute="top" secondItem="Rzv-Vm-Csf" secondAttribute="bottom" constant="60" id="hI1-pe-CfF"/>
+                            <constraint firstItem="Kqf-I4-ZxL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="57" id="rmn-yh-Sx1"/>
+                            <constraint firstItem="cwF-3p-lia" firstAttribute="baseline" secondItem="9kc-xD-5EE" secondAttribute="baseline" id="uTc-RL-aJz"/>
+                            <constraint firstItem="Rzv-Vm-Csf" firstAttribute="leading" secondItem="cwF-3p-lia" secondAttribute="leading" id="vqZ-CB-eaP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cwF-3p-lia" secondAttribute="bottom" constant="93" id="waX-3V-mMi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Rzv-Vm-Csf" id="EVy-0Z-odY"/>
+                        <outlet property="selectbtn" destination="cwF-3p-lia" id="GwP-cc-VsJ"/>
+                        <outlet property="sharebtn" destination="9kc-xD-5EE" id="wps-Xx-aXw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+</document>

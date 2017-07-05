@@ -1,0 +1,6 @@
+framework module Pods_Image_Cashing {
+  umbrella header "Pods-Image-Cashing-umbrella.h"
+
+  export *
+  module * { export * }
+}
